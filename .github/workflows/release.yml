@@ -1,0 +1,35 @@
+name: Release
+
+# Ein Tag wie v0.2.0 baut das Addon-Paket und lädt es zu GitHub Releases, Wago
+# und CurseForge hoch (wie KeyBar). Wago/CurseForge greifen erst, wenn das
+# jeweilige Secret gesetzt und die ID in der .toc eingetragen ist.
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+      WAGO_API_TOKEN: ${{ secrets.WAGO_API_TOKEN }}
+      CF_API_KEY: ${{ secrets.CF_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Tests
+        run: |
+          pip install lupa
+          python dev/test_guide.py
+
+      - name: Paket bauen und hochladen
+        uses: BigWigsMods/packager@v2

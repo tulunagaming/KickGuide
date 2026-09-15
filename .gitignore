@@ -1,0 +1,10 @@
+# Blizzard-Tabellen von wago.tools (ca. 50 MB), lädt dev/build_data.py neu
+dev/cache/
+
+# Python
+__pycache__/
+*.pyc
+
+# Paketier-Ausgabe
+.release/
+*.zip

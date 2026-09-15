@@ -1,0 +1,13 @@
+package-as: KickGuide
+
+# Nur das Addon ins Paket: Werkzeuge, Rohdaten und Doku bleiben im Repository.
+ignore:
+  - dev
+  - data
+  - docs
+  - README.md
+  - CHANGELOG.md
+
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown

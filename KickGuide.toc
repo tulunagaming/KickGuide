@@ -1,0 +1,20 @@
+## Interface: 120100, 120007
+## Title: KickGuide
+## Notes: Mythic+ preparation guide: important casters per dungeon and their casts.
+## Notes-deDE: Mythisch+-Vorbereitung: wichtige Caster je Dungeon und ihre Zauber.
+## Author: Tuluna
+## Version: 0.1.0
+## SavedVariables: KickGuideDB
+## X-License: GPL-2.0
+## X-Credits: Mob-Eigenschaften (CC) aus Mythic Dungeon Tools von Nnoggie (GPL-2.0)
+## X-Category: Miscellaneous
+## IconTexture: Interface\Icons\Ability_Kick
+
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+Libs\LibDBIcon-1.0\LibDBIcon-1.0.lua
+
+Core.lua
+Data.lua
+Guide.lua
