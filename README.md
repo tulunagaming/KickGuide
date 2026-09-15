@@ -51,7 +51,7 @@ python dev/build_data.py      # rebuild Data.lua from data/*.json + game data
 python dev/install.py         # copy the addon into the WoW AddOns folder
 ```
 
-Releases: pushing a tag like `v0.2.0` runs the tests and uploads the package to GitHub Releases and CurseForge (`.github/workflows/release.yml`).
+Releases: pushing a tag like `v0.2.0` runs the tests and uploads the package to GitHub Releases, Wago and CurseForge (`.github/workflows/release.yml`).
 
 ## License
 
