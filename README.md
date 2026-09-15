@@ -7,6 +7,7 @@ Pick a dungeon, see which trash mobs have casts Blizzard marks as *important*, a
 
 ![KickGuide: casts with kick info](docs/screenshot-main.jpg)
 ![KickGuide: dungeon map](docs/screenshot-map.jpg)
+![KickGuide: right-click to mark a mob as stunnable](docs/screenshot-stun-menu.jpg)
 
 ## Features
 
