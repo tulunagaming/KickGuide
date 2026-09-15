@@ -8,3 +8,7 @@ __pycache__/
 # Paketier-Ausgabe
 .release/
 *.zip
+
+# Zugangsdaten nie ins Repository
+Zugänge/
+*token*.txt
