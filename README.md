@@ -5,7 +5,8 @@ Pick a dungeon, see which trash mobs have casts Blizzard marks as *important*, a
 
 *Deutsch weiter unten.*
 
-![KickGuide window](docs/screenshot-main.png)
+![KickGuide: casts with kick info](docs/screenshot-main.jpg)
+![KickGuide: dungeon map](docs/screenshot-map.jpg)
 
 ## Features
 
